@@ -19,7 +19,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 10px;
-	padding: 130px 30px;
+	padding: 70px 30px;
 }
 .user{
 	width: 100px;
@@ -27,22 +27,22 @@
 	background: #fff;
 	border-radius: 50%;
 	position: absolute;
-	top: 20px;
+	top: -50px;
 	left: calc(50% - 50px);
 }
 h1{
 	text-align:center;
-	padding: 0 0 30px;
-	font-size: 30px;
+	padding: 0 0 20px;
+	font-size: 25px;
 }
 label{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 17px;
 }
 .login input{
 	width: 100%;
 	margin-bottom: 30px;
-	font-size: 15px;
+	font-size: 13px;
 }
 .login input[type="text"]{
 	border: none;
@@ -64,4 +64,13 @@ label{
 	cursor: pointer;
 	background-color: #00c1f9;
 	color: #000;
+}
+.login textarea{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 100%;
+	font-size: 13px;
+	color: #fff;
+	margin-bottom: 20px;
 }
