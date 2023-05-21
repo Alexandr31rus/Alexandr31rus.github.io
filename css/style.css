@@ -51,7 +51,8 @@ label{
 	border-bottom: 1px solid #fff;
 	color: #fff;
 }
-.login input[type="submit"]{
+button{
+	width: 100%;
 	border: none;
 	outline: none;
 	height: 40px;
@@ -60,7 +61,8 @@ label{
 	border: 2px solid #00b3e7;
 	color: #fff;
 	font-size: 20px;
-}.login input[type="submit"]:hover{
+}
+button:hover{
 	cursor: pointer;
 	background-color: #00c1f9;
 	color: #000;
@@ -73,4 +75,5 @@ label{
 	font-size: 13px;
 	color: #fff;
 	margin-bottom: 20px;
+	border-bottom: 1px solid #fff;
 }
