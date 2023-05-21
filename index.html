@@ -18,7 +18,7 @@
 				<label for="phone">Телефон</label>
 				<input type="text" id="phone" placeholder="Введите номер телефона">
 				<label for="textarea">Есть вопрос?</label>
-				<textarea rows="5" placeholder="Тогда напиши его здесь"></textarea>
+				<textarea id="area" rows="5" placeholder="Тогда напиши его здесь"></textarea>
 				<button id="sub">Заказать звонок</button>
 			</form>
 		</div>
@@ -29,6 +29,16 @@
 		tg.expand();
 
 		sub.addEventListener("click", () => {
+			let name = document.getElementById("username").value;
+			let phone = document.getElementById("phone").value;
+			let area = document.getElementById("area").value;
+			let data = {
+				name: name,
+				phone: phone,
+				area: area
+			}
+			tg.sendData(JSON.stringify(data));
+			
 			tg.close();
 		});
 	</script>
