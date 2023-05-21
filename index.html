@@ -19,13 +19,14 @@
 				<input type="text" id="phone" placeholder="Введите номер телефона">
 				<label for="textarea">Есть вопрос?</label>
 				<textarea rows="5" placeholder="Тогда напиши его здесь"></textarea>
-				<input type="submit" id="sub" value="Заказать звонок">
+				<button id="sub">Заказать звонок</button>
 			</form>
 		</div>
 	</div>
 	<script>
 		let tg = window.Telegram.WebApp;
 		let sub = document.getElementById("sub");
+		tg.expand();
 
 		order.addEventListener("click", () => {
 			tg.close();
